@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .4);
+
+}
+.image-container{
+    display: flex;
+    transform: translateX(0);
+    transition: .3s;
+
+}
+
+.fa-angle-double-right{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.fa-angle-double-left{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.fas{
+    color: rgba(255, 255, 255, 0.555);
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.fas:hover{
+    color: white;
+}
